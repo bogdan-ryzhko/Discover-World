@@ -16,46 +16,127 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="header__inner">
-				<div class="header__box">
-					<div class="header__logo">
-						<a href="#" class="header__logo-link">
-							<svg class="header__logo-icon" width="73" heihgt="64">
-								<use href="./img/header-sprites.svg#icon-logo"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="header__form">
-						<input type="text" class="header__search" name="search" placeholder="Search for places">
-					</div>
-					<div class="header__settings">
-						<button class="btn-settings">
-							<svg class="btn-settings__icon" width="24" heihgt="24">
-								<use href="./img/header-sprites.svg#icon-settings"></use>
-							</svg>
-						</button>
-					</div>
-				</div>
-				<div class="header__box">
-					<div class="header__box-content">
-						<p class="header__location">New York/ Dc</p>
-						<div class="header__bell">
-							<button class="bell__btn">
-								<svg class="bell__btn-icon" width="22" heihgt="22">
-									<use href="./img/header-sprites.svg#icon-bell"></use>
+	<main class="page">
+
+
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__box">
+						<div class="header__logo">
+							<a href="#" class="header__logo-link">
+								<svg class="header__logo-icon" width="73" heihgt="64">
+									<use href="./img/header-sprites.svg#icon-logo"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="header__form">
+							<input type="text" class="header__search" name="search" placeholder="Search for places">
+						</div>
+						<div class="header__settings">
+							<button class="btn-settings">
+								<svg class="btn-settings__icon" width="24" heihgt="24">
+									<use href="./img/header-sprites.svg#icon-settings"></use>
 								</svg>
 							</button>
 						</div>
-						<div class="header__avatar">
-							<img src="./img/avatar.png" alt="Avatar" class="avatar-img">
+					</div>
+					<div class="header__box">
+						<div class="header__box-content">
+							<p class="header__location">New York/ Dc</p>
+							<div class="header__bell">
+								<button class="bell__btn">
+									<svg class="bell__btn-icon" width="22" heihgt="22">
+										<use href="./img/header-sprites.svg#icon-bell"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="header__avatar">
+								<img src="./img/avatar.png" alt="Avatar" class="avatar-img">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</header>
+		<div class="main-wrapper">
+
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link current">
+							<svg class="menu__link-icon" width="19" height="19">
+								<use href="./img/menu-icons.svg#icon-dashboard"></use>
+							</svg>
+							Dashboard
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg class="menu__link-icon" width="24" height="24">
+								<use href="./img/menu-icons.svg#icon-note"></use>
+							</svg>
+							Note’s
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg class="menu__link-icon" width="24" height="24">
+								<use href="./img/menu-icons.svg#icon-theme"></use>
+							</svg>
+							Theme
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg class="menu__link-icon" width="24" height="24">
+								<use href="./img/menu-icons.svg#icon-account"></use>
+							</svg>
+							Account
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg class="menu__link-icon" width="24" height="24">
+								<use href="./img/menu-icons.svg#icon-explore"></use>
+							</svg>
+							Explore
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg class="menu__link-icon" width="24" height="24">
+								<use href="./img/menu-icons.svg#icon-graph"></use>
+							</svg>
+							Graph
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg class="menu__link-icon" width="24" height="24">
+								<use href="./img/menu-icons.svg#icon-messages"></use>
+							</svg>
+							Messages
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							<svg class="menu__link-icon" width="24" height="24">
+								<use href="./img/menu-icons.svg#icon-setting"></use>
+							</svg>
+							Setting
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="main__section">
+				<div class="main__section-container">
+					<div class="main__section-inner"></div>
+				</div>
+			</section>
 		</div>
-	</header>
+	</main>
 	<script src="./js/main.js"></script>
 </body>
 
