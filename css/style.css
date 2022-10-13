@@ -314,7 +314,7 @@ body {
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	transition: transform 0.2s ease;
+	transition: transform 0.3s ease;
 }
 
 .sign-out::before {
@@ -328,7 +328,6 @@ body {
 	background-image: url('../img/logout.svg');
 	left: 0;
 	transform: translateY(50px);
-	transition: transform 0.2s ease;
 }
 
 .sign-out:hover {

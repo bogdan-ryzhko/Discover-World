@@ -19,10 +19,11 @@ window.addEventListener('DOMContentLoaded', function () {
 		});
 	};
 
-	for (let i = 1; i < toursBtn.length; i++) {
+	for (let i = 0; i < toursBtn.length; i++) {
 		toursBtn[i].addEventListener('click', function () {
 			for (let g = 0; g < toursItem.length; g++) {
-				toursItem[i].classList.toggle('tours__item-current');
+				toursItem[g].classList.remove('tours__item-current');
+				toursItem[i].classList.add('tours__item-current');
 			}
 		});
 	};
