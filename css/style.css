@@ -210,6 +210,7 @@ body {
 	background-color: transparent;
 	margin-right: 20px;
 	transition: all 0.3s ease;
+	position: relative;
 }
 
 .bell__btn-icon {
@@ -223,6 +224,21 @@ body {
 
 .bell__btn:hover>.bell__btn-icon {
 	fill: #fff;
+}
+
+.bell__btn.active::after {
+	content: '';
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	background-color: #FF7F5C;
+	border-radius: 50%;
+}
+
+.bell__btn-icon.active {
+	fill: rgb(194, 0, 0);
 }
 
 /* ===================================> NAVIGATION <=================================== */
