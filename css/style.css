@@ -12,6 +12,7 @@
 	--bg-color: #E5E5E5;
 	--bg-search: #E9F1FA;
 	--main-color: #18333E;
+	--main-opacity-color: #18333eaf;
 }
 
 ul,
@@ -120,6 +121,10 @@ body {
 	padding-left: 55px;
 	color: var(--main-color);
 	border-radius: 26px;
+}
+
+.header__search::placeholder {
+	color: var(--main-opacity-color);
 }
 
 .header__search:focus-visible {
