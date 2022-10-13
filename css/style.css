@@ -253,8 +253,13 @@ body {
 
 
 .menu {
-	display: inline-block;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	max-height: 900px;
 	grid-column: 1/2;
+	font-weight: 500;
 }
 
 .menu__list {
@@ -288,6 +293,54 @@ body {
 
 .menu__link-icon {
 	margin-right: 20px;
+}
+
+.sign-out {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	background-color: transparent;
+	transition: color 0.3s ease;
+}
+
+.sign-out::before,
+.sign-out::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	transition: transform 0.2s ease;
+}
+
+.sign-out::before {
+	background-image: url('../img/logout-2.svg');
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.sign-out::after {
+	background-image: url('../img/logout.svg');
+	left: 0;
+	transform: translateY(50px);
+	transition: transform 0.2s ease;
+}
+
+.sign-out:hover {
+	color: #FF7F5C;
+}
+
+.sign-out:hover::before {
+	transform: translateY(-50px);
+}
+
+.sign-out:hover::after {
+	transform: translateY(0px);
 }
 
 /* ===================================> MAIN-SECTION <=================================== */
@@ -566,6 +619,7 @@ body {
 }
 
 .tours__item.tours__item-current {
+	width: 450px;
 	padding: 24px 130px 24px 24px;
 	background-color: var(--main-color);
 }
