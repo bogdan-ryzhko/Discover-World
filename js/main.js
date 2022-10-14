@@ -5,10 +5,17 @@ window.addEventListener('DOMContentLoaded', function () {
 	const bellBtnIcon = this.document.querySelector('.bell__btn-icon');
 	const toursBtn = this.document.querySelectorAll('.tours__btn');
 	const toursItem = this.document.querySelectorAll('.tours__item');
+	const asideLike = this.document.querySelector('.aside-btn-like-icon');
+	const asideBtn = this.document.querySelector('.aside-btn-like');
 
 	bellBtn.addEventListener('click', function () {
 		bellBtn.classList.toggle('active');
 		bellBtnIcon.classList.toggle('active');
+	});
+
+	asideBtn.addEventListener('click', function () {
+		asideBtn.classList.toggle('active');
+		asideLike.classList.toggle('active');
 	});
 
 	for (let i = 0; i < likeBtn.length; i++) {
