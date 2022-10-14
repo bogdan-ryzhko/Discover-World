@@ -132,10 +132,6 @@ body {
 	color: var(--main-opacity-color);
 }
 
-.header__search:focus-visible {
-	outline: none;
-}
-
 .header__settings {
 	max-width: 53px;
 	max-height: 53px;
