@@ -10,8 +10,8 @@ window.addEventListener('DOMContentLoaded', function () {
 	const asideListBtn = this.document.querySelectorAll('.list__btn-like');
 	const asideListIcon = this.document.querySelectorAll('.list__btn-icon');
 	const btnSignOut = this.document.querySelector('.sign-out');
-	const closeModalBtn = this.document.querySelector("[data-modal-close]");
-	const modal = this.document.querySelector("[data-modal]");
+	const closeModalBtn = this.document.querySelector('.close-btn-modal');
+	const modal = this.document.querySelector('.backdrop');
 
 	bellBtn.addEventListener('click', function () {
 		bellBtn.classList.toggle('active');
