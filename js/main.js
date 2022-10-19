@@ -7,6 +7,8 @@ window.addEventListener('DOMContentLoaded', function () {
 	const toursItem = this.document.querySelectorAll('.tours__item');
 	const asideLike = this.document.querySelector('.aside-btn-like-icon');
 	const asideBtn = this.document.querySelector('.aside-btn-like');
+	const asideListBtn = this.document.querySelectorAll('.list__btn-like');
+	const asideListIcon = this.document.querySelectorAll('.list__btn-icon');
 
 	bellBtn.addEventListener('click', function () {
 		bellBtn.classList.toggle('active');
@@ -22,6 +24,14 @@ window.addEventListener('DOMContentLoaded', function () {
 		likeBtn[i].addEventListener('click', function () {
 			for (let g = 0; g < likeIcon.length; g++) {
 				likeIcon[i].classList.toggle('active');
+			}
+		});
+	};
+
+	for (let i = 0; i < asideListBtn.length; i++) {
+		asideListBtn[i].addEventListener('click', function () {
+			for (let g = 0; g < asideListIcon.length; g++) {
+				asideListIcon[i].classList.toggle('active');
 			}
 		});
 	};
