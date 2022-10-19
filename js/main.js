@@ -9,6 +9,9 @@ window.addEventListener('DOMContentLoaded', function () {
 	const asideBtn = this.document.querySelector('.aside-btn-like');
 	const asideListBtn = this.document.querySelectorAll('.list__btn-like');
 	const asideListIcon = this.document.querySelectorAll('.list__btn-icon');
+	const btnSignOut = this.document.querySelector('.sign-out');
+	const closeModalBtn = this.document.querySelector("[data-modal-close]");
+	const modal = this.document.querySelector("[data-modal]");
 
 	bellBtn.addEventListener('click', function () {
 		bellBtn.classList.toggle('active');
@@ -44,4 +47,11 @@ window.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	};
+
+	btnSignOut.addEventListener("click", toggleModal);
+	closeModalBtn.addEventListener("click", toggleModal);
+
+	function toggleModal() {
+		modal.classList.toggle("is-hidden");
+	}
 });
