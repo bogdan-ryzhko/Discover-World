@@ -231,12 +231,12 @@ body {
 	right: -5px;
 	width: 10px;
 	height: 10px;
-	background-color: #FF7F5C;
+	background-color: rgb(255, 128, 0);
 	border-radius: 50%;
 }
 
 .bell__btn-icon.active {
-	fill: rgb(194, 0, 0);
+	fill: rgb(255, 128, 0);
 }
 
 /* ===================================> NAVIGATION <=================================== */
@@ -271,13 +271,13 @@ body {
 	background-color: #F9D44A;
 	padding-top: 22px;
 	padding-right: 30px;
+	padding-left: 45px;
 	padding-bottom: 22px;
 	border-top-right-radius: 32px;
 	border-bottom-right-radius: 32px;
 }
 
 .menu__link {
-	padding-left: 45px;
 	display: flex;
 	max-width: 100%;
 	align-items: center;
