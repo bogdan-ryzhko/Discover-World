@@ -41,7 +41,9 @@ body {
 
 .page {
 	position: relative;
+	width: 100%;
 	padding: 30px 0;
+	margin: 0 auto;
 }
 
 /* ===================================> HEADER <=================================== */
@@ -96,6 +98,10 @@ body {
 
 .header__logo-link {
 	max-width: 100%;
+	max-height: 64px;
+}
+
+.header__logo-icon {
 	max-height: 64px;
 }
 
@@ -389,7 +395,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 30px;
+	flex-wrap: wrap;
 }
 
 .main__section-item {
@@ -866,7 +872,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	min-height: 370px;
+	height: 370px;
 }
 
 .aside__item {
@@ -1141,4 +1147,255 @@ body {
 .form-btn:focus {
 	background-color: #F9D44A;
 	color: var(--main-color);
+}
+
+.mobile-menu__wrapper {
+	display: none;
+}
+
+@media screen and (max-width: 1350px) {
+
+	.page {
+		padding: 30px 0 0;
+	}
+
+	.main-wrapper {
+		grid-template-columns: 0.3fr 1.7fr;
+		grid-template-rows: 1.5fr 0.5fr;
+		grid-gap: 20px;
+		grid-row-gap: 40px;
+	}
+
+	.main__section {
+		min-width: 100%;
+	}
+
+	.menu {
+		max-width: 300px;
+	}
+
+	.header__form {
+		width: 100%;
+	}
+
+	.sign-out {
+		align-self: flex-start;
+	}
+
+	.header__inner {
+		min-width: 100%;
+	}
+
+	.header__inner {
+		display: block;
+	}
+
+	.header__box:last-child {
+		display: none;
+	}
+
+	.header__box:first-child {
+		justify-content: space-between;
+		margin-right: 0;
+	}
+
+	.header__box::after {
+		display: none;
+	}
+
+	.aside {
+		min-width: 100%;
+		max-height: 300px;
+		grid-row: 2/3;
+		grid-column: 1/3;
+	}
+
+	.aside__inner {
+		min-width: 100%;
+		max-height: 300px;
+		flex-direction: row;
+	}
+
+	.aside__list {
+		justify-content: space-between;
+		max-height: 300px;
+		width: 280px;
+	}
+
+	.aside__item {
+		justify-content: space-between;
+	}
+
+	.aside__card {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		display: flex;
+		justify-content: space-between;
+		max-height: 205px;
+		min-width: 70%;
+	}
+
+	.aside__img {
+		max-width: 300px;
+		width: 100%;
+		margin-bottom: 0;
+		margin-right: 1rem;
+	}
+
+	.aside__img>img {
+		max-width: 300px;
+		display: block;
+		height: auto;
+	}
+
+	.aside__card-descr {
+		margin-bottom: 0;
+		max-width: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.aside__card-info {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.aside__item+.aside__item {
+		margin-top: 0px;
+	}
+
+	.tours__item.tours__item-current {
+		max-width: 450px;
+	}
+
+	.tours__btn {
+		margin: 0 10px;
+	}
+
+	.date__list {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+}
+
+@media screen and (max-width: 1033px) {
+
+	.header {
+		margin-bottom: 20px;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.main__section {
+		grid-column: 1/3;
+	}
+
+	.section__top {
+		text-align: center;
+	}
+
+	.form__list {
+		justify-content: center;
+	}
+
+	.btn-settings {
+		display: none;
+	}
+
+	.mobile-menu__wrapper {
+		display: block;
+	}
+
+	.button-menu__btn {
+		background-color: transparent;
+		overflow: hidden;
+		position: relative;
+		z-index: 1000;
+	}
+
+	.icon-close {
+		transform: translateX(-100%);
+	}
+
+	.icon-open,
+	.icon-close {
+		transition: all 0.5s ease;
+	}
+
+	.button-menu__btn.is-open .icon-close {
+		transform: translateX(0);
+	}
+
+	.button-menu__btn.is-open .icon-open {
+		transform: translateX(100%);
+	}
+
+	.mobile__menu {
+		position: absolute;
+		z-index: 500;
+		top: 0;
+		left: 0;
+		right: 0;
+		min-height: 100vh;
+		width: 120%;
+		transform: translate(-130%, -5%);
+		transition: all 1s ease;
+		background-color: #fff;
+	}
+
+	.button-menu__btn.is-open+.mobile__menu {
+		transform: translate(-2%, -5%);
+	}
+
+	.mobile__menu-list {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		width: 100vw;
+		justify-content: space-between;
+		padding: 50px;
+	}
+
+	.mobile__menu-item {}
+
+	.mobile__menu-link {
+		font-size: 30px;
+	}
+
+	.main__section-form,
+	.section__top,
+	.title__wrapper,
+	.date__list {
+		margin-bottom: 20px;
+	}
+
+	.aside__card {
+		min-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.aside__inner {
+		display: block;
+	}
+
+	.aside__list {
+		min-width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		max-height: 100px;
+		flex-wrap: wrap;
+	}
+
+	.aside__item {
+		width: 280px;
+		justify-content: space-between;
+	}
+
+	.link-title {
+		text-align-last: left;
+	}
+
 }

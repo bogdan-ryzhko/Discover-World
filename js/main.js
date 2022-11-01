@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	const btnSignOut = this.document.querySelector('.sign-out');
 	const closeModalBtn = this.document.querySelector('.close-btn-modal');
 	const modal = this.document.querySelector('.backdrop');
+	const menuBtn = this.document.querySelector('.button-menu__btn');
 
 	bellBtn.addEventListener('click', function () {
 		bellBtn.classList.toggle('active');
@@ -54,4 +55,8 @@ window.addEventListener('DOMContentLoaded', function () {
 	function toggleModal() {
 		modal.classList.toggle("is-hidden");
 	}
+
+	menuBtn.addEventListener('click', function () {
+		menuBtn.classList.toggle('is-open');
+	})
 });
